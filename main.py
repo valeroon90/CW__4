@@ -24,7 +24,7 @@ def user_interaction():
         elif user_answer == 2:
             return sample_by_salary_to(superjob_vacancies, user_answer)
         else:
-            return user_interaction()
+            user_interaction()
 
     if user_answer_action == 2:
         if user_answer == 1:
@@ -32,7 +32,7 @@ def user_interaction():
         elif user_answer == 2:
             return sample_by_salary_from(superjob_vacancies, user_answer)
         else:
-            return user_interaction()
+            user_interaction()
 
     if user_answer_action == 3:
         if user_answer == 1:
@@ -40,7 +40,7 @@ def user_interaction():
         elif user_answer == 2:
             return get_all_found_vacancies(superjob_vacancies, user_answer)
         else:
-            return user_interaction()
+            user_interaction()
 
     if user_answer_action == 4:
         if user_answer == 1:
@@ -48,8 +48,7 @@ def user_interaction():
         elif user_answer == 2:
             return get_top_N_vacancies_by_salary(superjob_vacancies, user_answer)
         else:
-            return user_interaction()
-
+            user_interaction()
     else:
         print("Вы не выбрали действие")
 
